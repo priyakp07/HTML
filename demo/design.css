@@ -1,0 +1,12 @@
+button
+{
+    color: black;
+    border: 1px solid lightgray;
+    border-radius: 18px;
+    background: white;
+    padding-left: 16px;
+    padding-right: 16px;
+    padding-top: 8px;
+    padding-bottom: 8px;
+    font-weight: bold;
+}
