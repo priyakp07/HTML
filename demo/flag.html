@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html>
+    <head>
+         <style>
+            .wrapper{
+                width: 400px;
+                height: 351px;
+                border: none;
+                background: white;
+                box-shadow: 0px 0px 24px 2px black;
+                margin-left: auto;
+                margin-right: auto;
+                position: relative;
+            }
+            .orange{
+                width: 400px;
+                height: 117px;
+                background: orange;
+            }
+            .white{
+                width: 400px;
+                height: 120px;
+                background: white;
+                overflow: hidden;
+            }
+            .green{
+                width: 400px;
+                height: 117px;
+                background: green;
+            }
+            .ring{
+                width: 120px;
+                height: 120px;
+                margin-left: auto;
+                margin-right: auto;
+                display: block;
+                animation: rotate 3s linear infinite;
+                position: relative;
+            }
+            @keyframes rotate{
+                0%  {
+                    transform: rotate(0deg);
+                }
+                100%{
+                    transform: rotate(360deg);
+                }
+            }
+         </style>
+    </head>
+<body>
+    <div class="wrapper">
+        <div class="orange"></div>
+            <div class="white">
+                    <img class="ring" src="768px-Ashoka_Chakra_1.svg.png">
+            </div>
+        <div class="green"></div>
+    </div>
+</body>
+</html>
