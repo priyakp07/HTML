@@ -1,0 +1,187 @@
+       <!-- SOLAR SYSTEM -->
+
+<!DOCTYPE html>
+<html>
+    <head>
+         <style>
+            .sun{
+                margin-top: 297px;
+                margin-left: auto;
+                margin-right: auto;
+                width: 100px;
+                height: 100px;
+                background: rgb(210, 148, 13);
+                border: none;
+                border-radius:100%;
+                box-shadow: 0 0 80px yellow;
+            }
+            .earth{
+                position: absolute;
+                top: 50%;
+                left: 50%;
+                width: 50px;
+                height: 50px;
+                background: blue;
+                border: none;
+                border-radius: 100%;
+                transform-origin: top left;
+                animation: rotate-earth 12s linear infinite;
+            }
+            .moon{
+                position: absolute;
+                top: 50%;
+                left: 50%;
+                width: 20px;
+                height: 20px;
+                background: lightgrey;
+                border: none;
+                border-radius: 100%;
+                transform-origin: top left;
+                animation: rotate-moon 6s linear infinite;
+            }
+            .venus{
+                position: absolute;
+                top: 50%;
+                left: 50%;
+                width: 35px;
+                height: 35px;
+                background: rgb(220, 58, 69);
+                border: none;
+                border-radius: 100%;
+                transform-origin: top left;
+                animation: rotate-venus 7s linear infinite;
+            }
+            .mars{
+                position: absolute;
+                top: 50%;
+                left: 50%;
+                width: 43px;
+                height: 43px;
+                background: rgb(156, 55, 22);
+                border: none;
+                border-radius: 100%;
+                transform-origin: top left;
+                animation: rotate-mars 15s linear infinite;
+            }
+            .mercury{
+                position: absolute;
+                top: 50%;
+                left: 50%;
+                width: 29px;
+                height: 29px;
+                background: purple;
+                border: none;
+                border-radius: 100%;
+                transform-origin: top left;
+                animation: rotate-mercury 6s linear infinite;
+            }
+            span{
+                display: inline-block;
+                position: absolute;
+                top: 50%;
+                left: 50%;
+                transform: translate(-50%,-50%);
+                border-radius: 50%;
+            }
+            .planet{
+                background: transparent;
+                border: 1px solid white;
+            }
+            .planet1{                 /*mars*/
+                width: 540px;
+                height: 540px;
+                margin-top: auto;
+                margin-left: auto;
+                margin-right: auto;
+            }
+            .planet2{                /* venus*/
+                width: 275px;
+                height: 275px;
+                margin-top: auto;
+                margin-left: auto;
+                margin-right: auto;
+            }
+            .planet3{                    /* earth*/
+                width: 395px;
+                height: 395px;
+                margin-top: auto;
+                margin-left: auto;
+                margin-right: auto;
+            }
+            .planet4{                  /*moon*/
+                width: 85px;
+                height: 85px;
+                margin-top: auto;
+                margin-left: auto;
+                margin-right: auto;
+            }
+            .planet5{                 /*mercury*/
+                width: 185px;
+                height: 185px;
+                margin-top: auto;
+                margin-left: auto;
+                margin-right: auto;
+            }
+            @keyframes rotate-earth{
+                0%{
+                    transform: rotate(0deg) translatex(170px);
+                }
+                100%{
+                    transform: rotate(360deg) translateX(170px);
+                }
+            }
+            @keyframes rotate-moon{
+                0%{
+                    transform: rotate(0deg) translatex(30px);
+                }
+                100%{
+                    transform: rotate(360deg) translateX(30px);
+                }
+            }
+            @keyframes rotate-mars{
+                0%{
+                    transform: rotate(0deg) translatex(250px);
+                }
+                100%{
+                    transform: rotate(360deg) translateX(250px);
+                }
+            }
+            @keyframes rotate-venus{
+                0%{
+                    transform: rotate(0deg) translatex(115px);
+                }
+                100%{
+                    transform: rotate(360deg) translateX(115px);
+                }
+            }
+            @keyframes rotate-mercury{
+                0%{
+                    transform: rotate(0deg) translatex(75px);
+                }
+                100%{
+                    transform: rotate(360deg) translateX(75px);
+                }
+            }
+            body{
+                background: black;
+                overflow: hidden;
+            }
+         </style>
+    </head>
+    <body>
+        <div class="sun">
+            <span class="planet planet1"></span>
+            <span class="planet planet2"></span>
+            <span class="planet planet3"></span>
+            <span class="planet planet5"></span>
+        <div class="earth">
+            <span class="planet planet4"></span>
+        <div class="moon">
+        </div>
+    </div>
+    <div class="venus"></div>
+    <div class="mars"></div>
+    <div class="mercury"></div>
+</div>
+    </body>
+</html>
